@@ -3,4 +3,4 @@
 - 더 자세한 내용은 [블로그](https://velog.io/@gnuyhaa/posts)에 포스팅
 
 # HTML
-- [HTML 기초](HTML\HTML_기초.md)
+- [HTML 기초](./HTML/HTML_기초.md)
