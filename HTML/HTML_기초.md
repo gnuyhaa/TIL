@@ -191,7 +191,7 @@ Mac : Option + Command + i
 2. a(Anchor)
   > 다른 페이지로 이동할 수 있는 하이퍼링크를 생성
    ```html
-    <a href="https://www.google.com" target="_blank">구글로!</a>
+   <a href="https://www.google.com" target="_blank">구글로!</a>
    <a href="https://www.naver.com" title="네이버로 갈까요?">네이버로!</a>
    <a href="https://www.instagram.com">인스타그램으로!</a>
    ```
