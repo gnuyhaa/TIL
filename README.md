@@ -1,0 +1,6 @@
+# Today I Learned
+- 하루동안 학습한 내용이나 개발관련 경험을 기록으로 남긴다. 
+- 더 자세한 내용은 [블로그](https://velog.io/@gnuyhaa/posts)에 포스팅
+
+# HTML
+- [HTML 기초](HTML\HTML_기초.md)
