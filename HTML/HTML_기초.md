@@ -140,3 +140,148 @@ Mac : Option + Command + i
 해당 버튼을 활용해 요소를 클릭하면, Element Tab과 Styles Tab에서 해당 요소에 관련한 정보를 얻을 수 있다.
 ![](https://velog.velcdn.com/images/gnuyhaa/post/c36c9ffc-28eb-4362-bcb5-30f4ab4ea4d4/image.png)
 
+## [6] HTML Tags
+### (1) 콘텐츠 구분
+1. h1 ~ h6
+  > 제목을 표시하며, 문서의 논리적 흐름을 나타낸다.
+
+    ❗단순히 글씨 크기를 키우기 위한 용도로 사용하면 안됨
+  - 뉴스 주제 : `h1`
+    - 경제 : `h2`
+        - 금융 : `h3`
+        - 부동산
+    - 사회 : `h2`
+        - 사회 일반
+        - 인권/복지
+    - 스포츠 : `h2`
+        - 축구
+        - 농구
+        - 야구
+2. p
+  > 문단을 구분할 때 사용  
+3. div
+  > HTML 문서에서 `<div>`는 아래의 그림과 같이 하나의 영역을 구분  
+
+  ![alt text](image.png)
+
+4. hr
+  > 콘텐츠 사이 수평선을 표시 
+  ``` html
+    <body>
+    <div>Learn</div>
+    <!-- 수평선을 표시합니다. -->
+    <hr> 
+    <div>HTML/CSS</div>
+    </body>
+  ```
+  `<hr>`태그는 닫는 태그가 필요 없는(self-closing) 태그이다.
+### (2) 텍스트 관련
+1. span
+  > 텍스트 콘텐츠를 나타낸다. 
+   
+   ```html
+    <body>
+    <span>Learn</span>
+    <span>HTML</span>
+    <!-- 3번째 span은 영향이 없습니다. -->
+    <span></span>
+    <span>CSS</span>
+    </body>
+   ```
+2. a(Anchor)
+  > 다른 페이지로 이동할 수 있는 하이퍼링크를 생성
+   ```html
+    <a href="https://www.google.com" target="_blank">구글로!</a>
+   <a href="https://www.naver.com" title="네이버로 갈까요?">네이버로!</a>
+   <a href="https://www.instagram.com">인스타그램으로!</a>
+   ```
+  > 속성 정리
+
+  | 속성 목록 | 상세 설명 | 속성값 |
+  | --- | --- | --- |
+  | href (Hyperlink Reference) | 웹 사이트 주소를 명시 |  |
+  | target | 열릴 위치를 지정  | _blank,  _self, _top, _parent |
+  | title | 링크에 마우스 오버시 도움말 설정 |  |
+
+3. b & strong
+  > 텍스트를 <b>강조</b>
+4. i & em
+  > 텍스트를 <i>기울임체로</i>
+5. br 
+  > 줄바꿈 <br>효과
+  
+  `<br>` 태그는 self-closing 태그
+
+## (3) 목록 생성 
+1. li 
+  > 리스트의 하위항목 표시
+  ```html
+  <li>Learn</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  ```
+
+2. ul
+  > 순서가 없는 리스트
+  ```html
+  <ul>
+    <li>Learn</li>
+    <li>HTML</li>
+    <li>CSS</li>
+  </ul>
+  ``` 
+  <h1>Unordered List</h1>
+  <ul>
+    <li>Learn</li>
+    <li>HTML</li>
+    <li>CSS</li>
+  </ul>
+
+3. ol
+  > 순서가 있는 리스트
+  ```html
+  <ol>
+    <li>Learn</li>
+    <li>HTML</li>
+    <li>CSS</li>
+  </ol>
+  ``` 
+  <h1>Ordered List</h1>
+  <ol>
+    <li>Learn</li>
+    <li>HTML</li>
+    <li>CSS</li>
+  </ol>
+   
+## (4) 이미지와 멀티미디어 
+1. img
+  > `<img>` 태그는 self-closing태그
+  ```html
+  <img src="로고.jpeg" alt="노드크루 로고" draggable="false">
+  ```
+  | 속성 목록 | 상세 설명 | 
+  | --- | --- |
+  | src | 이미지 주소를 명시(외부, 내부 주소 가능) | 
+  | alt | 대체 텍스트  |
+  | draggable | false 설정 시 마우스로 드래그 불가능 |
+2. iframe
+  > 비디오를 삽입
+  ```html
+  <iframe width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/D0UnqGm_miA" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+  </iframe>
+  ``` 
+| 속성 목록 | 상세 설명 |
+| --- | --- |
+| height | 높이 지정 |
+| width | 너비 지정 |
+| src | 비디오 주소를 명시 |
+| title | iframe 요소 제목 |
+| frameborder | 테두리 속성 |
+| allow | 허용 여부 |
+| allowfullscreen | 전체화면 허용 여부 |
