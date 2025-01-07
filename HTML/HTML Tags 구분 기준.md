@@ -60,6 +60,11 @@
 1. text
   - `placeholder`를 이용해 입력값이 아직 없는 경우 보여줄 문구를 지정할 수 있음 
 2. password
+  - `required` 속성을 사용해 필수 항목으로 지정할 수 있습니다.
+    ```html
+    <label>비밀번호 :</label>
+    <input type="password" required>
+    ```
 3. email
 4. number
   - `max` & `min` 속성을 사용해 범위 지정 가능 

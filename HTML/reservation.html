@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>숙소 예약</h1>
+  <h2>신상 정보</h2>
+  <div>
+    <label for="name_input">이름 : </label>
+    <input type="text" id="name_input" placeholder="이름 입력">
+  </div>
+  <div>
+    <label for="email">이메일 : </label>
+    <input type="email" id="email" placeholder="이메일 입력">
+  </div>
+  <div>
+    <label for="profile">예약자 사진 : </label>
+    <input type="file">
+  </div>
+  <hr>
+  <h2>상세 정보</h2>
+  <h3>선호 객실 타입</h3>
+  <label for="city">도시뷰 : </label>
+  <input type="checkbox" name="city" id="city" value="city">
+  <label for="lake">레이크뷰 : </label>
+  <input type="checkbox" name="lake" id="lake" value="lake">
+  <label for="mountain">마운틴뷰 : </label>
+  <input type="checkbox" name="mountain" id="mountain" value="mountain">
+  <h3>동행자 정보</h3>
+  <label for="people">인원수 : </label>
+  <input type="number" name="people" id="people" max="5" min="0">
+  <h2>기타</h2>
+  <label for="more">요청 사항 :</label>
+  <textarea name="more" id="more" cols="30" rows="10">
+  </textarea>
+  <hr>
+  <button>전송</button>
+</body>
+</html>
