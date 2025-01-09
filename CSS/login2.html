@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1{
+      text-align: center;
+    }
+    .Username, .Password{
+      border: 0;
+      background: none;
+      width: 200px;
+      display: block;
+      margin: 30px auto;
+      text-align: center;
+      border: 2px solid #3498db;
+      border-radius: 20px;
+      padding: 14px 10px;
+      outline: none;
+      transition: 0.25s; /*부드러운 전환 가능 */
+    }
+    .Username:focus, .Password:focus{
+      border-color: #2ecc71;
+      width: 320px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Log In</h1>
+  <input class="Username" type="text" placeholder="Username">
+  <input class="Password" type="password" placeholder="Password">
+
+</body>
+</html>
