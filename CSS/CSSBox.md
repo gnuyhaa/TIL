@@ -1,5 +1,5 @@
 # CSS Box Model
-## [1] 박수 모델 구성요소 
+## [1] 박스 모델 구성요소 
 ![alt text](image.png)
 1. content : 내부 콘텐츠 영역
 2. padding : 콘텐츠 영역과 테두리 사이 공간
