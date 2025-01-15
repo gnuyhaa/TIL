@@ -11,7 +11,7 @@
 - [CSS Box](./CSS/CSSBox.md)
 
 # Bootstrap
--[Bootstrap 문법](./Bootstrap/Bootstrap.md)
+- [Bootstrap 문법](./Bootstrap/Bootstrap.md)
 
 # JavaScript
--[JavaScript 개념](./javascript/javascript.md)
+- [JavaScript 개념](./javascript/javascript.md)
