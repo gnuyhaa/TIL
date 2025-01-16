@@ -1,9 +1,11 @@
-let completeTask = function(){
-  console.log('함수 시작')
-}
+const movies = [
+  {title: "matrix", isAult: false},
+  {title: "kingsman", isAult: true},
+  {title: "zootopia", isAult: false}
+]
+let baby = movies.reduce(function (acc, movie) {
+  if (!movie.isAult) {acc.push(`영화제목: ${movie.title}`)}
+  return acc
+}, [])
 
-startTask(completeTask)
-
-function startTask(A) {
-  A();
-}
+console.log(baby)

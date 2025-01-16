@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="my-button">클릭</button>
+
+  <script>
+    const btn = document.querySelector('#my-button')
+    btn.addEventListener('click', function(){
+      alert('안녕하세요')
+    })
+    btn.addEventListener('click', function() {
+      alert('안녕히가세요')
+    })
+    btn.addEventListener('click', function() {
+      btn.style.width = '100px'
+      alert('hi')
+    })
+  </script>
+</body>
+</html>
