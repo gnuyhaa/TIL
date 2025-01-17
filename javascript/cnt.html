@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1 -->
+    <h2>수동 카운터</h2>
+    <p class="p1">0</p>
+    <button class="btnPlus">증가</button>
+    <button class="btnMinus">감소</button>
+    <button class="btnReset">리셋</button>
+
+    <hr />
+    <!-- 2 -->
+    <h2>자동 카운터</h2>
+    <p class="p2">0</p>
+    <span>10이 되면 멈춥니다!</span>
+
+    <script>
+			//
+      // const p1 = document.querySelector(".p1")
+      // const btnPlus = document.querySelector(".btnPlus")
+      // const btnMinus = document.querySelector(".btnMinus")
+      // const btnReset = document.querySelector(".btnReset")
+
+      // btnPlus.addEventListener("click", function(event) {
+      //   let cnt = parseInt(p1.innerText)
+      //   cnt++ // 카운트 증가
+      //   p1.innerText = cnt
+
+      //   // console.log(p1.innerText)
+      // })
+
+      // btnMinus.addEventListener("click", function(event) {
+      //   let cnt = parseInt(p1.innerText)
+      //   cnt-- // 카운트 감소
+      //   p1.innerText = cnt
+      // })
+
+      // btnReset.addEventListener("click", function(event) {
+      //   let cnt = parseInt(p1.innerText)
+      //   cnt = 0 // 리셋
+      //   p1.innerText = cnt
+
+      // })
+      const btnPlus = document.querySelector(".btnPlus")
+      const btnMinus = document.querySelector(".btnMinus")
+      const btnReset = document.querySelector(".btnReset")
+      const p1 = document.querySelector('.p1')
+
+      const changeBtn = function(behaviour) {
+        let cnt = parseInt(p1.innerText)
+        if (behaviour === 'plus') {
+          cnt++
+        } else if (behaviour === 'minus') {
+          cnt--
+        } else if (behaviour === 'reset'){
+          cnt = 0
+        }
+        p1.innerText = cnt;
+
+      }
+      btnPlus.addEventListener("click", () => changeBtn('plus'))
+      btnMinus.addEventListener("click", () => changeBtn('minus'))
+      btnReset.addEventListener("click", () => changeBtn('reset'))
+
+    </script>
+  </body>
+</html>
