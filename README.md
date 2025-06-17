@@ -21,4 +21,5 @@
 # 데이터 분석
 - [워드클라우드](./데이터분석/워드클라우드.md)
 
-
+# Python
+- [Python 기초](./Python/Python_기초.md)
