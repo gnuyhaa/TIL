@@ -1,9 +1,26 @@
 1. Python 예약어 
 False, None, True, and, as, assert, async, await, break, class, continue, def, del, elif, else, except, finally, for, from, global, if, import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while, with, yield
 
-2. 실수 비교
-round(num1,1) == num2
+True, False / None
+from, import, as 
+if, elif, else (조건문)
+for, while, in (반복문)
+async, await
+try, except, finally
+and, or, not, is
 
+
+2. 실수 비교
+(실수 비교 방법)
+1. abs(num1-num2) < 1e-10
+
+2. 파이썬에서 계산할때 발생할 수 있는 가장 큰 오차
+import sys
+abs(num1-num2) <= sys.float_info.epsilon
+
+3. math 모듈 사용
+import math
+math.isclose(num1,num2)
 
 3. 형변환
 5
