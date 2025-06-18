@@ -1,4 +1,4 @@
-# Python 기초
+# [1]Python 기초
 Typing
 
 Type - 종, 형식
@@ -31,3 +31,19 @@ a = 3 # 숫자
 
 - conda info --envs
 - conda env list
+
+파이썬의 모든 것은 객체
+
+객체를 설명하는 용어(자료형) 
+
+3, 5, 7 → int
+
+‘hi’, ‘hello’, ‘5’ → str
+
+사용자 정의 자료형
+
+response = requests.get(’https://www.naver.com’)
+
+
+remove -> remove 진행 후 또 remove 진행 시 KeyError 발생
+discard -> 오류 x 
