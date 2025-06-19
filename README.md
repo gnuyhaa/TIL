@@ -23,3 +23,4 @@
 
 # Python
 - [Python 기초](./Python/Python_기초.md)
+- [Python 문법](./Python/Python_문법.md)
