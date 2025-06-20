@@ -7,6 +7,20 @@ git : 소프트웨어
 git 설치 후 해야할 일  
 git config 설정( user.name, user.email)
 
+파일 상태 확인
+- git status
+
 저장소 선언 
 - git init
+
+1. git add . # 추가된 모든 파일이 추가됨
+2. git commit -m '커밋 메시지'
+3. git push origin main
+
+파일의 4가지 상태
+- Untracked : 
+- Unmodified : 
+- Modified :
+- Staged :
+
 
