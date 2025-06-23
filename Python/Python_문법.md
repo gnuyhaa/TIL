@@ -111,3 +111,12 @@ else:
 ```python
 true_value if <조건식> else false_value
 ```
+
+## 3. 반복문
+- while
+- for
+
+
+## 4. 기타
+- zip 
+  - 짧은 쪽 기준으로 객체를 모아줌 

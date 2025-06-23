@@ -43,4 +43,8 @@ git clone {원격저장소 주소}
 3. git checkout 내브랜치
 4. git merge main
 5. :q enter 
+6. (작업 완료 후 -> 본인 브랜치에 업로드하기) 
+7. git add . 
+8. git commit -m '메시지'
+9. git push origin 본인 브랜치
 
