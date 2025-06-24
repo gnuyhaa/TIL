@@ -120,3 +120,13 @@ true_value if <조건식> else false_value
 ## 4. 기타
 - zip 
   - 짧은 쪽 기준으로 객체를 모아줌 
+
+
+## 시간복잡도 
+ log(n) <n < n*log(n) < n**2  
+
+  
+## 참고
+ * .join() : str만 가능 
+ * map() : 모든 값에 동일하게 처리해야할 때 사용    
+  map(function, iterable) -> function 자리에는 함수 이름만 들어감 
