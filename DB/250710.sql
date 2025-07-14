@@ -1,17 +1,21 @@
 -- 250710 pratice
+-- 1
 ALTER TABLE tb_employee
 ADD COLUMN department_id INT,
-ADD CONSTRAINT fk_department
+ADD CONSTRAINT fk_employee_department
 FOREIGN KEY (department_id) REFERENCES tb_department(id);
 
+-- 2
 UPDATE tb_employee SET department_id = 1 WHERE id IN (1, 2);
 UPDATE tb_employee SET department_id = 2 WHERE id = 3;
 UPDATE tb_employee SET department_id = 4 WHERE id = 4;
 UPDATE tb_employee SET department_id = 3 WHERE id = 5;
 
+-- 3
 SELECT d.name AS department_name, AVG(e.salary) AS avg_salary
-FROM tb_employee e
-JOIN tb_department d ON e.department_id = d.id
+FROM tb_employee AS e
+JOIN tb_department AS d 
+ON e.department_id = d.id
 GROUP BY d.name;
 
 SELECT name, salary
