@@ -41,4 +41,4 @@ st.plotly_chart(fig4)
 # 5. 선그래프
 fig4 = px.line(df, x='sepal_length', y='sepal_width', color='species', title = 'Interactive Iris Sepal Line Chart')
 
-st.plotly_chart(fig4)
+st.plotly_chart(fig4) 
